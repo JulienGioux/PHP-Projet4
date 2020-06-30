@@ -1,7 +1,8 @@
 <?php 
-$loadedXML = simplexml_load_file('source.xml');
+$srcXml = 'source.xml';
+$loadedXML = simplexml_load_file($srcXml);
+(isset($_GET['id'])) ? '' : header ("location: 0");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,23 +11,20 @@ $loadedXML = simplexml_load_file('source.xml');
     <title>Document</title>
 </head>
 <body>
-
-<?php
-$srcXml = 'source.xml';
-$loadedXML = simplexml_load_file($srcXml);
-?>
-<?php
-if (isset($_GET['id'])) {
-    
-    echo $loadedXML -> page[intval($_GET['id'])] -> menu; 
-    echo $loadedXML -> page[intval($_GET['id'])] -> title;
-    echo $loadedXML -> page[intval($_GET['id'])] -> content;
-} else {
-    header("location: 0");
-}
-?>
-
-<a href="index.php?id=0">Début de l'aventure</a>
-
+<head>
+    <h1></h1>
+</head>
+<nav>
+    <ul>
+    <?php
+        foreach ($loadedXML -> page as $key => $value) {
+            echo '<li><a href="' . (intval($value['id']) - 1) . '">' . $value -> menu . '</a></li>';
+        }
+    ?>
+    </ul>
+</nav>
+<main>
+    <?= $loadedXML -> page[intval($_GET['id'])] -> content; ?>
+</main>
 </body>
 </html>
