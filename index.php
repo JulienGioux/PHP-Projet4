@@ -8,11 +8,11 @@ $loadedXML = simplexml_load_file($srcXml);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><?= $loadedXML -> page[intval($_GET['id'])] -> title ?></title>
 </head>
 <body>
 <head>
-    <h1></h1>
+    <h1><?= $loadedXML -> page[intval($_GET['id'])] -> title ?></h1>
 </head>
 <nav>
     <ul>
