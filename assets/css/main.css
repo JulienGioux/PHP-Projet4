@@ -1,3 +1,26 @@
 main {
     flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main p {
+    margin-top: 0;
+    
+}
+
+iframe {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.gallery_box_single {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    padding: 20px;
 }

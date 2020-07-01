@@ -17,6 +17,6 @@ body {
 .font-Title {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-variant: small-caps;
-    text-decoration: wavy;
+    font-size: 5vw;
     text-decoration: underline;
 }
