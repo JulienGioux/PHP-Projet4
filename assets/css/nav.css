@@ -1,9 +1,16 @@
+nav {
+  border-style: solid;
+  border-width: thin;
+  border-color: darkslategrey;
+  box-shadow: darkslategrey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: darkslategrey;
   }
   
 nav ul li {
@@ -19,8 +26,11 @@ nav ul li a {
   }
   
 nav ul li a:hover {
-    background-color: rgb(187, 144, 52);
+    background-color: goldenrod;
+    color: white;
+    transition: 0.3s;
   }
   .active {
-    background-color: #cea728;
+    background-color: darkgoldenrod;
+    color: darkslategrey;
   }

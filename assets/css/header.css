@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+}
+.bg-gold {
+    background-color: goldenrod;
+}
+.txt-white {
+    color: ghostwhite;
+}
+.txt-center {
+    margin-left: auto;
+    margin-right: auto;  
+}
+body {
+    margin: 0;
+}
+.font-Title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+    text-decoration: wavy;
+    text-decoration: underline;
+}

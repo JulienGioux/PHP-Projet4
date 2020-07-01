@@ -10,3 +10,4 @@ RewriteEngine on
 
 # Article sans numéro de page :
 RewriteRule ^([0-3]\.html)$ /index.php?id=$1.php [L]
+ErrorDocument 404 /404.html
