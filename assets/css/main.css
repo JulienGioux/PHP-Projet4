@@ -22,5 +22,38 @@ iframe {
     align-items: center;
 }
 .img {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: darkgray;
+    border-radius: 5px;
+    border-width: thin;
+    box-shadow: 4px 4px rgba(169, 169, 169, 0.459);
+
+}
+.img p {
+    margin-top: 10px;
+}
+.img img {
+    border-style: solid;
+    border-color: darkgray;
+    border-width: thin;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: darkgray;
+    border-radius: 5px;
+    border-width: thin;
+    box-shadow: 4px 4px rgba(169, 169, 169, 0.459);
 }
