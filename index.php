@@ -12,9 +12,9 @@ $loadedXML = simplexml_load_file($srcXml);
     <title><?= $loadedXML -> page[intval($_GET['id'])] -> title ?></title>
 </head>
 <body>
-<head>
+<header>
     <h1><?= $loadedXML -> page[intval($_GET['id'])] -> title ?></h1>
-</head>
+</header>
 <nav>
     <ul>
     <?php
