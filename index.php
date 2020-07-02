@@ -1,7 +1,7 @@
 <?php 
 $srcXml = 'source.xml';
 $loadedXML = simplexml_load_file($srcXml);
-(isset($_GET['id'])) ? '' : header ("location: 0");
+(isset($_GET['id'])) ? '' : header ("location: 0.html");
 ?>
 <!DOCTYPE html>
 <html lang="fr">
